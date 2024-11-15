@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang 3 - Notis Pendengaran</title>
+    <link rel="stylesheet" href="../css/borang.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+
+    <div class="header">
+            <h2>e-TAGS</h2>
+        <nav>
+            <a href="../admin-dashboard.html">Dashboard</a>
+            <a href="../complaints.html">Complaints</a>
+            <a href="../reports.html">Reports</a>
+            <a href="../user-management.html">User Management</a>
+            <a href="borang1.html">Borang 1 - Aduan</a>
+            <a href="borang2.html">Borang 2 - Pembelaan</a>
+            <a href="borang3.html"class="active" >Borang 3 - Notis Pendengaran</a>
+            <a href="borang4.html">Borang 4 - Award</a>
+            <a href="../settings.html">System Settings</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="logo-container">
+                <img src="jata.png" alt="KPWKM Logo" class="logo">
+            </div>
+            <div class="title">
+            <h1>BORANG 3</h1>
+            <p>[Peraturan 11 dan 12]</p>
+            <h3>AKTA ANTIGANGGUAN SEKSUAL 2022</h3>
+            <p>PERATURAN-PERATURAN ANTIGANGGUAN SEKSUAL (TRIBUNAL BAGI ANTIGANGGUAN SEKSUAL) 2024</p>
+            <h3>NOTIS PENDENGARAN</h3>
+        </div>
+
+        <div><p>ANTARA</p>
+
+            <div class="form-group">
+                <label for="complainantName">Nama Pengadu:</label>
+                <input type="text" id="complainantName" name="complainantName" placeholder="Masukkan Nama Pengadu" required>
+            </div>
+            
+            <p>DAN</p>
+            
+            <div class="form-group">
+                <label for="respondentName">Nama Responden:</label>
+                <input type="text" id="respondentName" name="respondentName" placeholder="Masukkan Nama Responden" required>
+            </div>
+        </div>
+            <form id="complaintForm" action="#" method="POST">
+                <!-- Form Group Row for Negeri and No. Aduan -->
+            <div class="form-group-row">
+                <!-- Negeri and No. Aduan fields similar to Borang 1 and Borang 2 -->
+                <div class="form-group">
+                <label for="negeri">Di Negeri:</label>
+                <input type="text" id="negeri" name="negeri" placeholder="Negeri" readonly>
+                </div>
+                <div class="form-group">
+                <label for="no-aduan">No. Aduan:</label>
+                <input type="text" id="no-aduan" name="no-aduan" placeholder="No. Aduan" readonly>
+                </div>
+            </div>
+
+            <!-- Form fields for hearing notice details -->
+            <div class="form-group-row">
+            <div class="form-group">
+            <label for="tarikh-pendengaran">Tarikh Pendengaran:</label>
+            <input type="date" id="tarikh-pendengaran" name="tarikh-pendengaran">
+            </div>
+            <div class="form-group">
+            <label for="masa-pendengaran">Masa Pendengaran:</label>
+            <input type="time" id="masa-pendengaran" name="masa-pendengaran">
+            </div>
+            </div>
+            <div class="form-group">
+            <label for="lokasi-pendengaran">Lokasi Pendengaran:</label>
+            <textarea id="lokasi-pendengaran" name="lokasi-pendengaran" placeholder="Masukkan Lokasi Pendengaran"></textarea>
+            </div>
+            <div class="form-group">
+            <label for="nama-pihak">Nama Pihak Terlibat:</label>
+            <input type="text" id="nama-pihak" name="nama-pihak" placeholder="Masukkan Nama Pihak Terlibat">
+            </div>
+            <!-- Additional fields if necessary -->
+
+            <button type="submit">Hantar</button>
+    
+            </form>
+        </div>
+    </div>
+</body>
+</html>

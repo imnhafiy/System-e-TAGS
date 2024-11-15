@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul Pengurusan Tribunal (TMS)</title>
+    <link rel="stylesheet" href="css/tribunal.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For statistics chart -->
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>e-TAGS</h2>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="complaints.html">Complaints</a>
+        <a href="reports.html">Reports</a>
+        <a href="user-management.html">User Management</a>
+        <a href="tribunal.html" class="active">Tribunal Management</a>
+        <a href="settings.html">System Settings</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Modul Pengurusan Tribunal (TMS)</h1>
+
+        <!-- Complainant and Respondent Management -->
+        <div class="card">
+            <h3>Maklumat Pengadu & Responden</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Peranan</th>
+                        <th>Status</th>
+                        <th>Tarikh Pendengaran</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ahmad Zulkifli</td>
+                        <td>Pengadu</td>
+                        <td>Tertunda</td>
+                        <td>15 Nov 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Zainab Omar</td>
+                        <td>Responden</td>
+                        <td>Dijadualkan</td>
+                        <td>16 Nov 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tribunal Forms Management -->
+        <div class="card">
+            <h3>Borang Tribunal (Borang 4 - Borang 8)</h3>
+            <p>Klik untuk memuat turun borang tribunal yang diperlukan:</p>
+            <ul>
+                <li><a href="borang4.html">Borang 4</a></li>
+                <li><a href="borang5.html">Borang 5</a></li>
+                <li><a href="borang6.html">Borang 6</a></li>
+                <li><a href="borang7.html">Borang 7</a></li>
+                <li><a href="borang8.html">Borang 8</a></li>
+            </ul>
+        </div>
+
+        <!-- Hearing Schedule -->
+        <div class="card">
+            <h3>Jadual Pendengaran Tribunal</h3>
+            <p>Pilih tarikh dan masa pendengaran tribunal:</p>
+            <input type="date" id="hearingDate" />
+            <input type="time" id="hearingTime" />
+        </div>
+
+        <!-- Tribunal Reports -->
+        <div class="card">
+            <h3>Laporan Tribunal</h3>
+            <p>Lihat laporan lengkap bagi kes tribunal:</p>
+            <button onclick="generateReport()">Lihat Laporan</button>
+        </div>
+
+        <!-- Tribunal Scheduling System (NEW SECTION) -->
+        <div class="card">
+            <h3>Sistem Penjadualan Tribunal</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tarikh</th>
+                        <th>Masa</th>
+                        <th>Tribunal</th>
+                        <th>Hakim</th>
+                        <th>Peguam</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dummy Data -->
+                    <tr>
+                        <td>01 Nov 2024</td>
+                        <td>09:00 - 12:00</td>
+                        <td>Kes A</td>
+                        <td>Hakim Abdul</td>
+                        <td>Peguam Zain</td>
+                    </tr>
+                    <tr>
+                        <td>02 Nov 2024</td>
+                        <td>10:00 - 13:00</td>
+                        <td>Kes B</td>
+                        <td>Hakim Siti</td>
+                        <td>Peguam Nora</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tribunal Stats and Export -->
+        <div class="card">
+            <h3>Laporan dan Statistik Tribunal</h3>
+            <p>Klik untuk menghasilkan laporan dan statistik yang boleh dieksport:</p>
+            <button class="export-btn">Eksport Laporan</button>
+        </div>
+
+        <!-- Sharing Section -->
+        <div class="card">
+            <h3>Kongsi Maklumat Jadual</h3>
+            <button class="share-btn">Kongsi Jadual</button>
+        </div>
+
+        <!-- Tribunal Stats Chart -->
+        <div class="card">
+            <h3>Statistik Hari dan Jam Tribunal</h3>
+            <canvas id="tribunalChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+    <!-- Script for Tribunal Scheduling and Chart -->
+    <script>
+        function generateReport() {
+            alert("Generating tribunal report...");
+        }
+
+        const ctx = document.getElementById('tribunalChart').getContext('2d');
+        const tribunalChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Tribunal 1', 'Tribunal 2', 'Tribunal 3'], // Tribunal Names
+                datasets: [{
+                    label: 'Jumlah Jam',
+                    data: [10, 15, 8], // Example data for hours
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

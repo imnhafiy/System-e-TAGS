@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>e-TAGS</h2>
+        <nav>
+            <ul>
+                <li><a href='admin-dashboard.html'>Dashboard</a></li>
+                <li><a href="complaints.html">Complaints</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="user-management.html">User Management</a></li>
+                <li><a href="tribunal.html">Tribunal Management</a></li>
+                <li><a href="borang/borang1.html">Borang 1 - Aduan</a></li>
+                <li><a href="borang/borang2.html">Borang 2 - Pembelaan</a></li>
+                <li><a href="borang/borang3.html">Borang 3 - Notis Pendengaran</a></li>
+                <li><a href="borang/borang4.html">Borang 4 - Award</a></li>
+                <li><a href="settings.html">System Settings</a></li>
+                <li><a href="financial.html">Analytics Overview</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Dashboard Content -->
+    <div class="dashboard">
+        <h1>Admin Dashboard</h1>
+        
+        <!-- Statistics Summary -->
+        <div class="stats-summary">
+            <div class="stat-box">Total Complaints: 120</div>
+            <div class="stat-box">Active Users: 75</div>
+            <div class="stat-box">Closed Cases: 85</div>
+            <div class="stat-box">Pending Cases: 35</div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <!-- Graphs and Charts -->
+            <div class="charts">
+                <div class="chart-container">
+                    <canvas id="complaintsChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="userActivityChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Additional Widgets -->
+            <div class="additional-widgets">
+                <div class="calendar-widget">
+                    <h3>Calendar</h3>
+                    <div id="calendar"></div>
+                </div>
+                <div class="tasks-widget">
+                    <h3>Upcoming Tasks</h3>
+                    <ul>
+                        <li>Review Complaint #123 <span>Due: 12/11/2024</span></li>
+                        <li>Finalize Tribunal Report <span>Due: 15/11/2024</span></li>
+                        <li>Monthly User Activity Review <span>Due: 20/11/2024</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Charts -->
+            <div class="charts">
+                <div class="chart-container">
+                    <canvas id="recentComplaintsChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="complaintsByStateChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="categoryBreakdownChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/admin-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+/* Center Align Logo and Title in Header */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Styling for .form-group-row */
+.form-group-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+}
+
+/* Header styles */
+.header {
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #4a90e2, #50e3c2); /* Gradient for the ministry theme */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center; /* Center the title text */
+    width: 100px;
+}
+
+.header nav {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* Align nav to the right */
+}
+
+.header nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header nav a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Adjust Main Content */
+.main-content {
+    margin-top: 80px; /* Adjust for header height */
+    padding: 30px;
+    background-image: url('mainbg.jpg');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Logo styling inside the header */
+.logo-container-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-header {
+    width: 50px;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 900px; /* Adjusted width */
+    padding: 20px 30px; /* Reduced padding for a cleaner look */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.container h1 {
+    font-size: 26px; /* Adjusted font size */
+    color: #343a40;
+    margin-bottom: 20px; /* Adjusted margin */
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px; /* Reduced padding */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px; /* Reduced margin for tighter layout */
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #495057;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styling for the select dropdown */
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+    appearance: none; /* Removes default arrow for custom styling */
+}
+
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group input[type="date"],
+.form-group input[type="time"] {
+    width: 100%;
+    padding: 10px; /* Slightly smaller padding */
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Styling for the checkbox list with brief descriptions */
+.checkbox-list {
+    /* max-width: 400px; */
+    margin: 10px 0;
+}
+
+.checkbox-item {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between; /* Align label and checkbox */
+    align-items: center;
+}
+
+.checkbox-item input[type="checkbox"] {
+    order: 1; /* Move the checkbox to the right */
+    margin-left: 10px;
+}
+
+.checkbox-item label {
+    order: 0; /* Keep the label on the left */
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+
+/* Style the select dropdown */
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Button styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+}
+
+/* Styling for the confirmation popup */
+.confirmation-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.confirmation-popup .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.confirmation-popup button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirmation-popup button:hover {
+    background-color: #0056b3;
+}
+
+.confirmation-popup label {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    color: #495057;
+}
+
+/* Responsive adjustments for flex layout */
+@media (max-width: 768px) {
+    .form-group-row, .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}

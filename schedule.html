@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Management - Tribunal e-TAGS</title>
+    <link rel="stylesheet" href="css/schedule.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h2>e-TAGS Dashboard</h2>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="user-management.html">User Management</a>
+        <a href="complaints.html">Complaints Management</a>
+        <a href="schedule-management.html" class="active">Schedule Management</a>
+        <a href="financial.html">Financial Overview</a>
+        <a href="#">System Settings</a>
+    </div>
+
+    <!-- Main Content for Schedule Management -->
+    <div class="main-content">
+        <h1>Tribunal Schedule Management</h1>
+
+        <!-- Dummy Table for Schedule -->
+        <div class="card">
+            <h3>Tribunal Sessions Overview</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Judge</th>
+                        <th>Lawyer</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-10-15</td>
+                        <td>10:00 AM - 1:00 PM</td>
+                        <td>Judge A</td>
+                        <td>Lawyer X</td>
+                        <td>Scheduled</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-16</td>
+                        <td>2:00 PM - 5:00 PM</td>
+                        <td>Judge B</td>
+                        <td>Lawyer Y</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-17</td>
+                        <td>9:00 AM - 12:00 PM</td>
+                        <td>Judge C</td>
+                        <td>Lawyer Z</td>
+                        <td>Scheduled</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Export & Share Buttons -->
+        <div class="card">
+            <h3>Export & Share Schedule</h3>
+            <button class="export-btn">Export to PDF</button>
+            <button class="export-btn">Export to Excel</button>
+            <button class="share-btn">Share via Email</button>
+            <button class="share-btn">Copy Shareable Link</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="javascript/schedule.js"></script>
+</body>
+</html>

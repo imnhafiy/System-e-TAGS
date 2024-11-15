@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang 1 - BAGI PENGADU</title>
+    <link rel="stylesheet" href="../css/borang.css">
+    <script defer src="borang1.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h2>e-TAGS</h2>
+        <nav>
+            <a href="../admin-dashboard.html">Dashboard</a>
+            <a href="../complaints.html">Complaints</a>
+            <a href="../reports.html">Reports</a>
+            <a href="../user-management.html">User Management</a>
+            <a href="borang1.html" class="active">Borang 1 - Aduan</a>
+            <a href="borang2.html">Borang 2 - Pembelaan</a>
+            <a href="borang3.html">Borang 3 - Notis Pendengaran</a>
+            <a href="borang4.html">Borang 4 - Award</a>
+            <a href="../settings.html">System Settings</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <div class="logo-container">
+                <img src="jata.png" alt="KPWKM Logo" class="logo">
+            </div>
+
+            <div class="title">
+                <h1>BORANG 1</h1>
+                <p>[Peraturan 3, 4 dan 5 dan subperaturan 6(1) dan 10(2)]</p>
+                <h3>AKTA ANTIGANGGUAN SEKSUAL 2022</h3>
+                <p>PERATURAN-PERATURAN ANTIGANGGUAN SEKSUAL (TRIBUNAL BAGI ANTIGANGGUAN SEKSUAL) 2024</p><br>
+            </div>
+
+            <form id="complaintForm" action="#" method="POST">
+                <!-- Form Group Row for Negeri and No. Aduan -->
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="state">Negeri</label>
+                        <select id="state" name="state" required>
+                            <option value="" disabled selected>Pilih Negeri</option>
+                            <option value="Johor">Johor</option>
+                            <option value="Kedah">Kedah</option>
+                            <option value="Kelantan">Kelantan</option>
+                            <option value="Kuala Lumpur">Kuala Lumpur</option>
+                            <option value="Labuan">Labuan</option>
+                            <option value="Melaka">Melaka</option>
+                            <option value="Negeri Sembilan">Negeri Sembilan</option>
+                            <option value="Pahang">Pahang</option>
+                            <option value="Perak">Perak</option>
+                            <option value="Perlis">Perlis</option>
+                            <option value="Pulau Pinang">Pulau Pinang</option>
+                            <option value="Putrajaya">Putrajaya</option>
+                            <option value="Sabah">Sabah</option>
+                            <option value="Sarawak">Sarawak</option>
+                            <option value="Selangor">Selangor</option>
+                            <option value="Terengganu">Terengganu</option>
+                        </select>
+                    </div>                
+                    <div class="form-group">
+                        <label for="caseNumber">No. Aduan</label>
+                        <input type="text" id="caseNumber" name="caseNumber" readonly>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="complainantName">Nama Pengadu</label>
+                    <input type="text" id="complainantName" name="complainantName" placeholder="Masukkan Nama Pengadu">
+                </div>
+                <div class="form-group-row">
+                    <div class="form-group half-width">
+                    <label for="respondentIC">No. Kad Pengenalan Pengadu</label>
+                    <input type="text" id="respondentName" name="respondentName" placeholder="Masukkan No. Kad Pengenalan Responden">
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="respondentemail">Alamat Emel Pengadu</label>
+                        <input type="text" id="respondentAddress" name="respondentAddress" rows="3" placeholder="Masukkan Alamat Emel Responden">
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="respondentPhone">No. Telefon Pengadu</label>
+                        <input type="text" id="respondentPhone" name="respondentPhone" placeholder="Masukkan No. Telefon Pengadu">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="respondentName">Nama Responden</label>
+                    <input type="text" id="respondentName" name="respondentName" placeholder="Masukkan Nama Responden">
+                </div>
+                <div class="form-group">
+                    <label for="respondentAddress">Alamat Pejabat Responden (Jika Diketahui)</label>
+                    <textarea id="respondentAddress" name="respondentAddress" rows="3" placeholder="Masukkan Alamat Pejabat Responden"></textarea>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group half-width">
+                        <label for="respondentJob">Pekerjaan Responden (Jika Diketahui)</label>
+                        <input type="text" id="respondentJob" name="respondentJob" placeholder="Masukkan Pekerjaan Responden">
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="respondentPhone">No. Telefon Responden</label>
+                        <input type="text" id="respondentPhone" name="respondentPhone" placeholder="Masukkan No. Telefon">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="complaintDetails">Butir-butir Aduan</label>
+                    <textarea id="complaintDetails" name="complaintDetails" rows="4" placeholder="Masukkan Butir-butir Aduan"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend style="font-size: 20px;">Akta Yang Dikehendaki</legend>
+                    <div id="relevantActs" class="checkbox-list">
+                        <div class="checkbox-item" title="Akta ini menangani gangguan seksual dan menetapkan prosedur untuk mengendalikan aduan.">
+                            <input type="checkbox" id="akta840" name="relevantActs" value="Akta 840">
+                            <label for="akta840">1. Akta Antigangguan Seksual 2022 (Akta 840)</label>
+                        </div>
+                        <div class="checkbox-item" title="Kanun Keseksaan yang merangkumi kesalahan jenayah, termasuk kesalahan seksual dan gangguan.">
+                            <input type="checkbox" id="akta574" name="relevantActs" value="Akta 574">
+                            <label for="akta574">2. Kanun Keseksaan (Akta 574)</label>
+                        </div>
+                        <div class="checkbox-item" title="Melindungi kanak-kanak daripada kesalahan seksual, terpakai jika mangsa adalah kanak-kanak.">
+                            <input type="checkbox" id="akta792" name="relevantActs" value="Akta 792">
+                            <label for="akta792">3. Akta Kesalahan-Kesalahan Seksual Terhadap Kanak-Kanak 2017 (Akta 792)</label>
+                        </div>
+                        <div class="checkbox-item" title="Mengatur gangguan siber dan kesalahan seksual digital, termasuk penyebaran kandungan tidak wajar.">
+                            <input type="checkbox" id="akta588" name="relevantActs" value="Akta 588">
+                            <label for="akta588">4. Akta Komunikasi dan Multimedia 1998 (Akta 588)</label>
+                        </div>
+                        <div class="checkbox-item" title="Berkaitan dengan kesalahan kecil, yang boleh termasuk tingkah laku gangguan.">
+                            <input type="checkbox" id="akta336" name="relevantActs" value="Akta 336">
+                            <label for="akta336">5. Akta Kesalahan-Kesalahan Kecil 1955 (Akta 336)</label>
+                        </div>
+                        <div class="checkbox-item" title="Menyentuh gangguan di tempat kerja dan menetapkan prosedur untuk menangani gangguan seksual di tempat kerja.">
+                            <input type="checkbox" id="akta265" name="relevantActs" value="Akta 265">
+                            <label for="akta265">6. Akta Kerja 1955 (Akta 265)</label>
+                        </div>
+                        <div class="checkbox-item" title="Berkaitan dengan hubungan perindustrian dan pertikaian pekerjaan, termasuk kes gangguan seksual.">
+                            <input type="checkbox" id="akta177" name="relevantActs" value="Akta 177">
+                            <label for="akta177">7. Akta Perhubungan Perusahaan 1967 (Akta 177)</label>
+                        </div>
+                        <div class="checkbox-item" title="Menjamin keselamatan dan kesihatan pekerja, termasuk perlindungan terhadap gangguan di tempat kerja.">
+                            <input type="checkbox" id="akta514" name="relevantActs" value="Akta 514">
+                            <label for="akta514">8. Akta Keselamatan dan Kesihatan Pekerjaan 1994 (Akta 514)</label>
+                        </div>
+                    </div>
+                    </fieldset>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="otherComplaint">Aduan Lain (Jika Ada)</label>
+                    <textarea id="otherComplaint" name="otherComplaint" rows="3" placeholder="Masukkan Aduan Lain (Jika Ada)"></textarea>
+                </div>
+
+                <!-- Confirmation Popup -->
+                <div id="confirmationPopup" class="confirmation-popup">
+                    <div class="popup-content">
+                        <h3>Pengesahan Borang</h3>
+                        <p>Saya dengan ini mengaku ADA/ TIDAK ADA membuat aduan mengenai perkara di atas di platform perundangan lain.</p>
+                        <p><strong>Jika ada, sila nyatakan:</strong></p>
+                        <textarea id="otherComplaintText" placeholder="Masukkan jawapan di sini (jika ada)" style="width: 100%; margin-bottom: 10px;"></textarea>
+                        <label for="confirmCheckbox">
+                            <input type="checkbox" id="confirmCheckbox"> Saya mengesahkan bahawa maklumat di atas adalah betul.
+                        </label>
+                        <br>
+                        <button type="button" onclick="submitForm()">Hantar</button>
+                        <button type="button" onclick="closePopup()">Batal</button>
+                    </div>
+                </div>
+
+                <button type="button" onclick="showConfirmationPopup()">Hantar Aduan</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

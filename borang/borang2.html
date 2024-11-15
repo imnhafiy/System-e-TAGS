@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang 2 - BAGI RESPONDEN</title>
+    <link rel="stylesheet" href="../css/borang.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header -->
+<div class="header">
+    
+        <h2>e-TAGS</h2>
+    
+    <nav>
+        <a href="../admin-dashboard.html">Dashboard</a>
+        <a href="../complaints.html">Complaints</a>
+        <a href="../reports.html">Reports</a>
+        <a href="../user-management.html">User Management</a>
+        <a href="borang1.html">Borang 1 - Aduan</a>
+        <a href="borang2.html"class="active">Borang 2 - Pembelaan</a>
+        <a href="borang3.html">Borang 3 - Notis Pendengaran</a>
+        <a href="borang4.html">Borang 4 - Award</a>
+        <a href="../settings.html">System Settings</a>
+    </nav>
+</div>
+
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <div class="logo-container">
+                <img src="jata.png" alt="KPWKM Logo" class="logo">
+            </div>
+                
+            <div class = "title">
+            <h1>BORANG 2</h1>
+            <p>[Peraturan 6, 7 dan 8 dan subperaturan 10(2)]</p>
+            <h3>AKTA ANTIGANGGUAN SEKSUAL 2022</h3>
+            <p>PERATURAN-PERATURAN ANTIGANGGUAN SEKSUAL (TRIBUNAL BAGI ANTIGANGGUAN SEKSUAL) 2024</p><br>
+            
+        </div>
+
+            <form id="complaintForm" action="#" method="POST">
+                <!-- Form Group Row for Negeri and No. Aduan -->
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="state">Negeri</label>
+                        <select id="state" name="state" required>
+                            <option value="" disabled selected>Pilih Negeri</option>
+                            <option value="Johor">Johor</option>
+                            <option value="Kedah">Kedah</option>
+                            <option value="Kelantan">Kelantan</option>
+                            <option value="Kuala Lumpur">Kuala Lumpur</option>
+                            <option value="Labuan">Labuan</option>
+                            <option value="Melaka">Melaka</option>
+                            <option value="Negeri Sembilan">Negeri Sembilan</option>
+                            <option value="Pahang">Pahang</option>
+                            <option value="Perak">Perak</option>
+                            <option value="Perlis">Perlis</option>
+                            <option value="Pulau Pinang">Pulau Pinang</option>
+                            <option value="Putrajaya">Putrajaya</option>
+                            <option value="Sabah">Sabah</option>
+                            <option value="Sarawak">Sarawak</option>
+                            <option value="Selangor">Selangor</option>
+                            <option value="Terengganu">Terengganu</option>
+                        </select>
+                    </div>                
+                    <div class="form-group">
+                        <label for="caseNumber">No. Aduan</label>
+                        <input type="text" id="caseNumber" name="caseNumber" readonly>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="complainantName">Nama Pengadu</label>
+                    <input type="text" id="complainantName" name="complainantName" placeholder="Masukkan Nama Pengadu">
+                </div>
+                <div class="form-group">
+                    <label for="respondentName">Nama Responden</label>
+                    <input type="text" id="respondentName" name="respondentName" placeholder="Masukkan Nama Responden  ">
+                </div>
+                <div class="form-group-row">
+                    <div class="form-group half-width">
+                    <label for="respondentIC">No. Kad Pengenalan Responden</label>
+                    <input type="text" id="respondentName" name="respondentName" placeholder="Masukkan No. Kad Pengenalan Responden">
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="respondentemail">Alamat Emel Responden</label>
+                        <input type="text" id="respondentAddress" name="respondentAddress" rows="3" placeholder="Masukkan Alamat Emel Responden">
+                    </div>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group half-width">
+                        <label for="respondentJob">Pekerjaan Responden</label>
+                        <input type="text" id="respondentJob" name="respondentJob" placeholder="Masukkan Pekerjaan Responden">
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="respondentPhone">No. Telefon Responden</label>
+                        <input type="text" id="respondentPhone" name="respondentPhone" placeholder="Masukkan No. Telefon">
+                    </div>
+                </div>
+                
+
+                <div class="form-group">
+                    <label for="complaintDetails">Butir-butir Aduan</label>
+                    <textarea id="complaintDetails" name="complaintDetails" rows="4" placeholder="Masukkan Butir-butir Aduan"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="desiredAction">Perintah yang Dikehendaki</label>
+                    <textarea id="desiredAction" name="desiredAction" rows="3" placeholder="Masukkan Perintah yang Dikehendaki"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="otherComplaint">Pernyataan Pembelaan:</label>
+                    <textarea id="otherComplaint" name="otherComplaint" rows="3" placeholder="Masukkan Pernyataan Pembela"></textarea>
+                </div>
+                <button type="button" onclick="submitForm()">Hantar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

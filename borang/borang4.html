@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang 4 - Digital Form</title>
+    <link rel="stylesheet" href="../css/borang.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="header">
+        <h2>e-TAGS</h2>
+        <nav>
+        <a href="../admin-dashboard.html">Dashboard</a>
+        <a href="../complaints.html">Complaints</a>
+        <a href="../reports.html">Reports</a>
+        <a href="../user-management.html">User Management</a>
+        <a href="borang1.html">Borang 1 - Aduan</a>
+        <a href="borang2.html">Borang 2 - Pembelaan</a>
+        <a href="borang3.html">Borang 3 - Notis Pendengaran</a>
+        <a href="borang4.html" class="active">Borang 4 - Award</a>
+        <a href="../settings.html">System Settings</a>
+        </nav>
+    </div>
+    
+
+    <div class="main-content">
+    <div class="container">
+        <div class="logo-container">
+            <img src="jata.png" alt="KPWKM Logo" class="logo">
+        </div>
+        <div class="title">
+        <h1>BORANG 4</h1>
+        <p>[Peraturan 14 dan subperaturan 15(5) dan 18(4) dan perenggan 13(c)]</p>
+        <h3>AKTA ANTIGANGGUAN SEKSUAL 2022</h3>
+        <p>PERATURAN-PERATURAN ANTIGANGGUAN SEKSUAL (TRIBUNAL BAGI ANTIGANGGUAN SEKSUAL) 2024</p><br>
+        </div>
+        <form id="borang4Form">
+            <div class="form-group-row">
+            <div class="form-group">
+                <label for="state">Negeri:</label>
+                <input type="text" id="state" name="state" placeholder="Masukkan Negeri" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="caseNumber">No. Aduan:</label>
+                <input type="text" id="caseNumber" name="caseNumber" readonly placeholder="Auto-generated">
+            </div>
+            </div>
+
+            <h3 style="text-align: center;">AWARD ADUAN GANGGUAN SEKSUAL</h3> 
+            <p>ANTARA</p>
+
+            <div class="form-group">
+                <label for="complainantName">Nama Pengadu:</label>
+                <input type="text" id="complainantName" name="complainantName" placeholder="Masukkan Nama Pengadu" required>
+            </div>
+            
+            <p>DAN</p>
+            
+            <div class="form-group">
+                <label for="respondentName">Nama Responden:</label>
+                <input type="text" id="respondentName" name="respondentName" placeholder="Masukkan Nama Responden" required>
+            </div>
+
+            <h4>DI HADAPAN</h4>
+            <div class="form-group">
+                <label for="pengerusi">Pengerusi:</label>
+                <input type="text" id="pengerusi" name="pengerusi" placeholder="Admin to fill this field" disabled>
+            </div>
+            
+            <div class="form-group">
+                <label for="member1">Anggota 1:</label>
+                <input type="text" id="member1" name="member1" placeholder="Masukkan Nama Anggota" disabled>
+            </div>
+
+            <div class="form-group">
+                <label for="member2">Anggota 2:</label>
+                <input type="text" id="member2" name="member2" placeholder="Masukkan Nama Anggota" disabled>
+            </div>
+            
+            <div class="form-group">
+                <label for="tribunalDate">Tarikh Tribunal:</label>
+                <input type="date" id="tribunalDate" name="tribunalDate" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="location">Lokasi Tribunal:</label>
+                <input type="text" id="location" name="location" placeholder="Masukkan Lokasi Tribunal" required>
+            </div>
+
+            <button type="submit">Simpan dan Hantar</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="borang4.js"></script>
+</body>
+</html>

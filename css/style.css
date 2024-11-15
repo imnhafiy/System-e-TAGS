@@ -1,0 +1,134 @@
+/* General styling for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Main dashboard styling */
+.dashboard {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.dashboard h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stat {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* User Management Panel Styling */
+.user-management {
+    margin: 20px 0;
+}
+
+.user-management h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#pendingRegistrations table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#pendingRegistrations th, #pendingRegistrations td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#pendingRegistrations th {
+    background-color: #f2f2f2;
+}
+
+.approve-btn, .reject-btn {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.approve-btn {
+    background-color: #28a745;
+}
+
+.reject-btn {
+    background-color: #dc3545;
+}
+

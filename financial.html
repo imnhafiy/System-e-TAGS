@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribunal Financial Overview</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="css/financial.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>e-Tribunal</h2>
+        <ul>
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="schedule.html">Schedule Management</a></li>
+            <li><a href="financial.html" class="active">Financial Overview</a></li>
+            <!-- Add other menu items here -->
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Tribunal Financial Overview</h1>
+        
+        <div class="chart-container">
+            <div id="income_vs_expenses_chart" class="chart"></div>
+            <div id="expense_breakdown_chart" class="chart"></div>
+        </div>
+
+        <div class="chart-container">
+            <div id="monthly_expenses_chart" class="chart"></div>
+            <div id="cash_flow_chart" class="chart"></div>
+        </div>
+    </div>
+
+    <script src="javascript/financial.js"></script>
+</body>
+</html>

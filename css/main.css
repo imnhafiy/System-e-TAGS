@@ -1,0 +1,174 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Background with Blur Effect */
+body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Blurred Background Image */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('istockphoto-1126744697-612x612.jpg'); /* Replace with actual path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(3px); /* Blur effect */
+    z-index: -1;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #2f0096, #0b63f1, #8fb1e8);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensures it sits above the background */
+}
+
+/* Header Title */
+.header-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.header-title h2 {
+    font-size: 1.2rem;
+}
+
+/* Header Navigation Box Styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #00214d; /* Box background color */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #004080; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+nav ul li a:active {
+    transform: scale(0.95); /* Slightly reduce on click */
+}
+
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgba(224, 242, 241, 0.8); /* Light overlay for readability */
+    flex: 1;
+}
+
+/* Login Buttons */
+.login-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.login, .register {
+    padding: 8px 15px;
+    background-color: #001769;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register {
+    background-color: #00214d;
+}
+
+/* User Selection */
+.user-selection {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+    height: 110px;
+    margin-top: 140px;
+}
+
+.option-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.option-card:hover {
+    transform: scale(1.05);
+}
+
+.option-card h3 {
+    font-size: 1.5rem;
+    color: #009688;
+}
+
+a.option-card {
+    text-decoration: none;
+}
+
+
+/* Footer fixed to the bottom */
+footer {
+    background-color: #3507a9;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-top: auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+}
